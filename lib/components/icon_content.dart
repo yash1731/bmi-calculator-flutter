@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
+import '../constants.dart';
 
 //! PASSING value of costom widget - icon widget and passing velue to string
-
-const labelTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-);
 
 class IconContent extends StatelessWidget {
   IconContent({this.icon, this.label});
@@ -25,7 +21,7 @@ class IconContent extends StatelessWidget {
         SizedBox(
           height: 15.0,
         ),
-        Text(label, style: labelTextStyle)
+        Text(label, style: KLabelTextStyle)
       ],
     );
   }
